@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script type="text/javascript" src="prime.js"></script>
+    <script type="text/javascript">
+      function check(){
+        const n = document.getElementById('num').value;
+        const prime = is_prime(n);
+        if(prime) {
+          alert('素数です');
+        } else {
+          alert('素数ではありません')
+        }
+      }
+    </script>    
+  </head>
+  
+  <body>
+    <input type="text" id="num" />
+    <input type="button" value='button' onclick='return check()' />
+  </body>
+  
+</html>
